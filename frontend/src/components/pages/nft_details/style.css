@@ -1,0 +1,88 @@
+.container{
+  background: linear-gradient(to right, #010101, #0f1724);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.wrapper{
+   margin-top: 2rem;
+   margin-left: 6rem;
+}
+
+.container .wrapper .title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 30px;
+}
+
+.container .wrapper .title h2{
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.container .wrapper .nft {
+  width: 640px;
+  border: 1px solid rgba(156, 163, 175, 1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.container .wrapper .nft .nftImage{
+  width: 100%;
+  height: 360px;
+}
+
+.container .wrapper .nft .about{
+  height: 72px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container .wrapper .nft .nftName{
+  font-size: 17px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+.container .wrapper .nft .nftDescription{
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(156, 163, 175, 1);
+}
+
+@media only screen and (max-width: 800px){
+  .container .wrapper .nft {
+    width: 520px;
+  }
+
+  .wrapper{
+    margin-left: 3rem;
+ }
+}
+
+@media only screen and (max-width: 600px){
+  .wrapper{
+    margin-left: 2rem;
+ }
+  .container .wrapper .nft {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 510px){
+  .container .wrapper .nft {
+    width: 340px;
+  }
+
+  .container .wrapper .nft .nftImage{
+    width: 100%;
+    height: 170px;
+  }
+  
+}

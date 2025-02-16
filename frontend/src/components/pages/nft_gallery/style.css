@@ -1,0 +1,89 @@
+.section3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3 .gallery{
+  padding-top: 90px;
+  padding-bottom: 40px;
+  width: 90%;
+}
+
+.section3 .gallery .title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 40px;
+  margin-left: 40px;
+}
+
+.section3 .gallery .nftBoxes{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.section3 .gallery .nftBoxes .about{
+  background-color: #090c15;
+}
+
+.section3 .gallery .nftBoxes a{
+  text-decoration: none;
+}
+
+.section3 .gallery .nftBox{
+   display: flex;
+   flex-direction: column;
+   border: 0.5px solid rgba(229, 231, 235, 1);
+   border-radius: 12px;
+   overflow: hidden;
+}
+  
+.section3 .gallery .nftBox .about{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 84px;
+  padding: 6px;
+  margin-right: 4px;
+}
+
+.section3 .gallery .nftBox .about .nftName{
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+.section3 .gallery .nftBox .about .nftDescription{
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(156, 163, 175, 1);
+}
+
+.section3 .gallery .nftBox img{
+  width: 387px;
+  height: 192px;
+}
+@media only screen and (min-width: 1201px){
+  .section3 .gallery .title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 40px;
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 1200px){
+  .section3 .gallery .title{
+    text-align: center;
+  }
+  .section3 .gallery .nftBox img{
+    width: 320px;
+    height: 192px;
+  }
+}

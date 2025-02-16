@@ -1,0 +1,118 @@
+.section4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4 .container{
+  width: 576px;
+  height: 506px;
+  border-radius: 16px;
+  border: 1px solid rgba(17, 24, 39, 0.5);
+  background-color:#00181c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.section4 .container .circule{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background-color: rgba(16, 185, 129, 0.2);
+}
+
+.section4 .container .title1{
+  width: 301px;
+  height: 27px;
+  font-weight: 700;
+  color: rgba(16, 185, 129, 1);
+  text-align: center;
+}
+
+.section4 .container .title2{
+  width: 428px;
+  height: 17px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(156, 163, 175, 1);
+}
+
+.section4 .container .card{
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid rgba(229, 231, 235, 1);
+  border-radius: 12px;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.section4 .container .card .cardDetails{
+  padding: 5px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.section4 .container .card img{
+  width: 387px;
+  height: 192px;
+}
+
+.section4 .container .btnBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section4 .container .btnBox .btn1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 247px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid rgba(229, 231, 235, 1);
+  background: linear-gradient(to left, rgba(236, 72, 153, 1), rgba(139, 92, 246, 1));
+  color: rgba(229, 231, 235, 1);
+  transition: all 0.3s ease-in-out;  
+}
+
+.section4 .container .btnBox .btn1:hover {
+  background: linear-gradient(to right, rgba(236, 72, 153, 1), rgba(139, 92, 246, 1));  
+  color: rgba(255, 255, 255, 1);  
+  box-shadow: 0px 8px 20px rgba(139, 92, 246, 0.4);  
+  transform: translateY(-4px);  
+}
+
+.section4 .container .btnBox .btn2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 247px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: rgba(55, 65, 81, 1);
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+  color: rgba(229, 231, 235, 1);
+  transition: all 0.3s ease-in-out;  
+}
+
+.section4 .container .btnBox .btn2:hover{
+    background-color: rgba(31, 41, 55, 1);  
+    color: rgba(255, 255, 255, 1);  
+    border: 1px solid rgba(255, 255, 255, 0.7);  
+    box-shadow: 0px 8px 20px rgba(55, 65, 81, 0.4);  
+    transform: translateY(-4px);  
+}

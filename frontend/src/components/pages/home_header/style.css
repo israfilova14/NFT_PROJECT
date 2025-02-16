@@ -1,0 +1,122 @@
+.section1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 90px;
+  gap: 40px;
+  padding-bottom: 90px;
+}
+
+ .section1 .title{
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 60px;
+  font: Inter;
+  line-height: 60px;
+  width: 577px;
+  text-align: center;
+}
+
+.section1 .description{
+  color: rgba(209, 213, 219, 1);
+  font-weight: 400;
+  font-size: 20px;
+  font: Inter;
+  width: 795px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.section1 .btnBox{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.section1 .btnBox .btn1 {
+  width: 193.8px;
+  height: 58px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: linear-gradient(to left, rgba(236, 72, 153, 1), rgba(139, 92, 246, 1));
+  color: rgba(229, 231, 235, 1);
+  transition: all 0.3s ease-in-out;  
+}
+
+.section1 .btnBox .btn1:hover {
+  background: linear-gradient(to right, rgba(236, 72, 153, 1), rgba(139, 92, 246, 1)); /* reverse gradient */
+  color: rgba(255, 255, 255, 1);  
+  box-shadow: 0px 8px 20px rgba(139, 92, 246, 0.4);  
+  transform: translateY(-4px);  
+}
+
+.section1 .btnBox .btn1:active {
+  transform: translateY(1px);  
+}
+
+.section1 .btnBox .btn2 {
+  width: 181.88px;
+  height: 58px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: rgba(55, 65, 81, 1);
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+  color: rgba(229, 231, 235, 1);
+  transition: all 0.3s ease-in-out;  
+}
+
+.section1 .btnBox .btn2:hover {
+  background-color: rgba(31, 41, 55, 1);  
+  color: rgba(255, 255, 255, 1);  
+  border: 1px solid rgba(255, 255, 255, 0.7);  
+  box-shadow: 0px 8px 20px rgba(55, 65, 81, 0.4);  
+  transform: translateY(-4px);  
+}
+
+.section1 .btnBox .btn2:active {
+  transform: translateY(2px); 
+}
+
+@media only screen and (max-width:810px){
+  .section1 .title{
+    font-size: 56px;
+    width: 577px; 
+  }
+
+  .section1 .description{
+    font-size: 18px;
+    width: 605px;
+  }
+  
+}
+
+@media only screen and (max-width: 645px){
+  .section1 .title{
+    font-size: 50px;
+    width: 477px; 
+  }
+  .section1 .description{
+    font-size: 18px;
+    width: 505px;
+  }
+}
+
+@media only screen and (max-width: 540px){
+  .section1 .title{
+    font-size: 42px;
+    line-height: 50px;
+    width: 390px; 
+  }
+  .section1 .description{
+    font-size: 17px;
+    width: 390px;
+  }
+}
