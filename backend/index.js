@@ -1,13 +1,21 @@
 // PACKAGES
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
+const dotenv = require('dotenv');
 const cookieParser = require('cookie-parser');
 
 // UTILITIES
 const connectDB = require('./config/db.js');
+const nftRoutes = require('./routes/nftRoutes.js');
+
+dotenv.config();
+
 const app = express();
-const nftRoutes = require('./routes/nftRoutes.js')
+
+// MIDDLEWARES
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+app.use(cookieParser());
 
 // CORS CONFIGURATION
 const corsOptions = {
@@ -17,16 +25,14 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-// MIDDLEWARES
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
-app.use(cookieParser());
+
 
 // ROUTES
 app.use('/nft', nftRoutes)
 
 // SERVER SETUP
 const PORT = process.env.PORT || 9000;
+
 connectDB().then(() => {
   app.listen(PORT, () => {
     console.log("Server is running on port", PORT)
